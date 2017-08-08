@@ -5,7 +5,7 @@ var weather = require('weather-js');
 // Options: 
 // search:     location name or zipcode 
 // degreeType: F or C 
-function findWeather ( user,location){
+function Findweather ( user,location){
 this.user = user;
 this.location = location;
 this.getWeather = function(){
@@ -20,9 +20,9 @@ this.getWeather = function(){
 
 }
 
-var KC = new findWeather('KC', 'Charlotte,NC')
+var KC = new Findweather('KC', 'Charlotte,NC')
 KC.getWeather()
 
-// findWeather ('Charlotte, NC')
+// Findweather ('Charlotte, NC')
 
-module.exports = findWeather;
+module.exports = Findweather;
